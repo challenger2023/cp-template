@@ -10,7 +10,7 @@ int rnd(int l, int r) {
 }
 bool isprime(int K) {
     if (!(K % 2)) return (K == 2);
-    for (int i = 3; i * i <= K; i += 3) if (!(K % i)) return false;
+    for (int i = 3; i * i <= K; i += 2) if (!(K % i)) return false;
     return true;
 }
 int bm(int B, int P, int M = M2) {
@@ -30,10 +30,10 @@ void fac(int M = M2) {
     for (int i = mxN-1; i > 2; i--) f2[i-1] = (f2[i] * i) % M;
 }
 void solve() {
-
+    
 }
 int32_t main() {
     ios_base::sync_with_stdio(0); cin.tie(0);
-//    cin >> t;
+    cin >> t;
     for (int ti = 1; ti <= t; ti++) solve();
 }
