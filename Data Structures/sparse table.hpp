@@ -1,7 +1,4 @@
 class SPARSE{
-	// NOTE TO SELF: 0-BASE
-	// sparse table, O(n log n) compute, O(1) query
-	// best for range sum/max
 	public:
 		SPARSE(int _sz) : sz(_sz){
 			depth = (int) ceil(log2(sz));

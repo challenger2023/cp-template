@@ -1,6 +1,4 @@
 class DSU{
-	// DSU with union-by-size and path compression
-	// Near constant time queries: average time of less than O(4)
 	public:
 		DSU(int &_sz) : sz(_sz){
 			p.assign(sz+1, -1);

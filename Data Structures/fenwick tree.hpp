@@ -1,5 +1,4 @@
 class FENWICK{
-	// fenwick tree for point add and prefix query
 	public:
 		FENWICK(int &_sz) : sz(_sz){
 			fenwick.assign(sz+1, 0);
